@@ -116,6 +116,8 @@
 		18FD0B601F7AAFE000D9E65B /* TFourModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFourModel.m; sourceTree = "<group>"; };
 		18FD0B621F7AAFEC00D9E65B /* TFourView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFourView.h; sourceTree = "<group>"; };
 		18FD0B631F7AAFEC00D9E65B /* TFourView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFourView.m; sourceTree = "<group>"; };
+		18FD0B651F7AB07100D9E65B /* ZFMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMacros.h; sourceTree = "<group>"; };
+		18FD0B661F7AB08300D9E65B /* ZFURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFURL.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,8 @@
 			children = (
 				18FD0B171F7AAA4500D9E65B /* ZFConstString.h */,
 				18FD0B181F7AAA4500D9E65B /* ZFConstString.m */,
+				18FD0B651F7AB07100D9E65B /* ZFMacros.h */,
+				18FD0B661F7AB08300D9E65B /* ZFURL.h */,
 			);
 			path = ZFApp;
 			sourceTree = "<group>";
