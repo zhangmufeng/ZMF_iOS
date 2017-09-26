@@ -148,6 +148,7 @@
 		18FD0ABC1F7AA57B00D9E65B = {
 			isa = PBXGroup;
 			children = (
+				18FD0B6C1F7AB69400D9E65B /* ZMF3 */,
 				18FD0AFD1F7AA78100D9E65B /* ZFClass */,
 				18FD0AC71F7AA57B00D9E65B /* ZF_iOS */,
 				18FD0AE31F7AA57C00D9E65B /* ZF_iOSTests */,
@@ -204,8 +205,6 @@
 		18FD0AFD1F7AA78100D9E65B /* ZFClass */ = {
 			isa = PBXGroup;
 			children = (
-				18FD0B6B1F7AB5D900D9E65B /* ZMF2 */,
-				18FD0B6A1F7AB4B600D9E65B /* ZMF */,
 				18FD0B121F7AA78100D9E65B /* ZFApp */,
 				18FD0B0E1F7AA78100D9E65B /* ZFBase */,
 				18FD0B061F7AA78100D9E65B /* ZFMain */,
@@ -438,19 +437,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		18FD0B6A1F7AB4B600D9E65B /* ZMF */ = {
+		18FD0B6C1F7AB69400D9E65B /* ZMF3 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ZMF;
-			sourceTree = SOURCE_ROOT;
-		};
-		18FD0B6B1F7AB5D900D9E65B /* ZMF2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ZMF2;
-			sourceTree = SOURCE_ROOT;
+			path = ZMF3;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
