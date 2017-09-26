@@ -6,8 +6,12 @@
 //  Copyright © 2017年 张木锋. All rights reserved.
 //
 
-#import "ZFConstString.h"
+#import <Foundation/Foundation.h>
 
-@implementation ZFConstString
 
-@end
+/*************************  ZMF  *************************/
+
+NSString * const ZMF_COOKIES_VALUE = @"ZMF_COOKIES_VALUE";
+NSString * const ZMF_DELETE_INFO   = @"ZMF_DELETE_INFO";
+
+/*************************  END  *************************/

@@ -16,6 +16,7 @@
 		18FD0ADB1F7AA57B00D9E65B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0ADA1F7AA57B00D9E65B /* main.m */; };
 		18FD0AE51F7AA57C00D9E65B /* ZF_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0AE41F7AA57C00D9E65B /* ZF_iOSTests.m */; };
 		18FD0AF01F7AA57C00D9E65B /* ZF_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0AEF1F7AA57C00D9E65B /* ZF_iOSUITests.m */; };
+		18FD0B191F7AAA4500D9E65B /* ZFConstString.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B181F7AAA4500D9E65B /* ZFConstString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		18FD0AEB1F7AA57C00D9E65B /* ZF_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZF_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FD0AEF1F7AA57C00D9E65B /* ZF_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZF_iOSUITests.m; sourceTree = "<group>"; };
 		18FD0AF11F7AA57C00D9E65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FD0B171F7AAA4500D9E65B /* ZFConstString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFConstString.h; sourceTree = "<group>"; };
+		18FD0B181F7AAA4500D9E65B /* ZFConstString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFConstString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +311,8 @@
 		18FD0B121F7AA78100D9E65B /* ZFApp */ = {
 			isa = PBXGroup;
 			children = (
+				18FD0B171F7AAA4500D9E65B /* ZFConstString.h */,
+				18FD0B181F7AAA4500D9E65B /* ZFConstString.m */,
 			);
 			path = ZFApp;
 			sourceTree = "<group>";
@@ -476,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FD0B191F7AAA4500D9E65B /* ZFConstString.m in Sources */,
 				18FD0ACD1F7AA57B00D9E65B /* ViewController.m in Sources */,
 				18FD0AD31F7AA57B00D9E65B /* ZF_iOS.xcdatamodeld in Sources */,
 				18FD0ADB1F7AA57B00D9E65B /* main.m in Sources */,

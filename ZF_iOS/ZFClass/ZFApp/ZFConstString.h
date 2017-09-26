@@ -6,8 +6,9 @@
 //  Copyright © 2017年 张木锋. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+/*************************  ZMF  *************************/
 
-@interface ZFConstString : NSObject
+UIKIT_EXTERN NSString * const ZMF_COOKIES_VALUE;
+UIKIT_EXTERN NSString * const ZMF_DELETE_INFO;
 
-@end
+/*************************  END  *************************/
