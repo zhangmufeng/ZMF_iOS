@@ -37,6 +37,7 @@
 		18FD0B5E1F7AAFCF00D9E65B /* TThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B5D1F7AAFCF00D9E65B /* TThreeView.m */; };
 		18FD0B611F7AAFE000D9E65B /* TFourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B601F7AAFE000D9E65B /* TFourModel.m */; };
 		18FD0B641F7AAFEC00D9E65B /* TFourView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B631F7AAFEC00D9E65B /* TFourView.m */; };
+		3B25372194F91EFB502D9774 /* libPods-ZF_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B1EB79544F65AEB4348BC0 /* libPods-ZF_iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,9 @@
 		18FD0B631F7AAFEC00D9E65B /* TFourView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFourView.m; sourceTree = "<group>"; };
 		18FD0B651F7AB07100D9E65B /* ZFMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMacros.h; sourceTree = "<group>"; };
 		18FD0B661F7AB08300D9E65B /* ZFURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFURL.h; sourceTree = "<group>"; };
+		1FF246CC79CA9B336C69305C /* Pods-ZF_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZF_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZF_iOS/Pods-ZF_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7A2E6505ED192909EC103AE0 /* Pods-ZF_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZF_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZF_iOS/Pods-ZF_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A9B1EB79544F65AEB4348BC0 /* libPods-ZF_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZF_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B25372194F91EFB502D9774 /* libPods-ZF_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +158,8 @@
 				18FD0AE31F7AA57C00D9E65B /* ZF_iOSTests */,
 				18FD0AEE1F7AA57C00D9E65B /* ZF_iOSUITests */,
 				18FD0AC61F7AA57B00D9E65B /* Products */,
+				CAA830D43AF747824F47C4AA /* Pods */,
+				C7600F237DD2D52CE0D17A85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -436,6 +443,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C7600F237DD2D52CE0D17A85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B1EB79544F65AEB4348BC0 /* libPods-ZF_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAA830D43AF747824F47C4AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A2E6505ED192909EC103AE0 /* Pods-ZF_iOS.debug.xcconfig */,
+				1FF246CC79CA9B336C69305C /* Pods-ZF_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -443,9 +467,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18FD0AF41F7AA57C00D9E65B /* Build configuration list for PBXNativeTarget "ZF_iOS" */;
 			buildPhases = (
+				3AB4F61D8E9EBE9DAA80B4A5 /* [CP] Check Pods Manifest.lock */,
 				18FD0AC11F7AA57B00D9E65B /* Sources */,
 				18FD0AC21F7AA57B00D9E65B /* Frameworks */,
 				18FD0AC31F7AA57B00D9E65B /* Resources */,
+				FF5172DA6BBD80C2B312F70D /* [CP] Embed Pods Frameworks */,
+				946C3304B93C649F37FDAD3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -563,6 +590,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AB4F61D8E9EBE9DAA80B4A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZF_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		946C3304B93C649F37FDAD3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZF_iOS/Pods-ZF_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5172DA6BBD80C2B312F70D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZF_iOS/Pods-ZF_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18FD0AC11F7AA57B00D9E65B /* Sources */ = {
@@ -754,6 +832,7 @@
 		};
 		18FD0AF51F7AA57C00D9E65B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A2E6505ED192909EC103AE0 /* Pods-ZF_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -768,6 +847,7 @@
 		};
 		18FD0AF61F7AA57C00D9E65B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FF246CC79CA9B336C69305C /* Pods-ZF_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
