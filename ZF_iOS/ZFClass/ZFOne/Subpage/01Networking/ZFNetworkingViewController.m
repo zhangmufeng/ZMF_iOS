@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    [self setting];
+}
+
+- (void)setting {
     self.title = @"Networking";
 }
 

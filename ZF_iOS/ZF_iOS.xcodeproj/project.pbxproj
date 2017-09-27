@@ -19,6 +19,7 @@
 		1899732E1F7B72170037230C /* ZFDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899732D1F7B72160037230C /* ZFDeviceViewController.m */; };
 		189973311F7B722B0037230C /* ZFRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973301F7B722B0037230C /* ZFRACViewController.m */; };
 		189973341F7B723C0037230C /* ZFParserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973331F7B723C0037230C /* ZFParserViewController.m */; };
+		1899733A1F7B85650037230C /* ZFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973391F7B85650037230C /* ZFNetworking.m */; };
 		18FD0ACA1F7AA57B00D9E65B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0AC91F7AA57B00D9E65B /* AppDelegate.m */; };
 		18FD0ACD1F7AA57B00D9E65B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0ACC1F7AA57B00D9E65B /* ViewController.m */; };
 		18FD0AD01F7AA57B00D9E65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FD0ACE1F7AA57B00D9E65B /* Main.storyboard */; };
@@ -94,6 +95,10 @@
 		189973301F7B722B0037230C /* ZFRACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFRACViewController.m; sourceTree = "<group>"; };
 		189973321F7B723C0037230C /* ZFParserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFParserViewController.h; sourceTree = "<group>"; };
 		189973331F7B723C0037230C /* ZFParserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFParserViewController.m; sourceTree = "<group>"; };
+		189973361F7B84EA0037230C /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		189973371F7B84EA0037230C /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		189973381F7B85650037230C /* ZFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFNetworking.h; sourceTree = "<group>"; };
+		189973391F7B85650037230C /* ZFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFNetworking.m; sourceTree = "<group>"; };
 		18FD0AC51F7AA57B00D9E65B /* ZF_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZF_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FD0AC81F7AA57B00D9E65B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18FD0AC91F7AA57B00D9E65B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -265,8 +270,20 @@
 			children = (
 				1899731D1F7B71C50037230C /* ZFNetworkingViewController.h */,
 				1899731E1F7B71C50037230C /* ZFNetworkingViewController.m */,
+				189973351F7B847D0037230C /* ZFNetWorking */,
 			);
 			path = 01Networking;
+			sourceTree = "<group>";
+		};
+		189973351F7B847D0037230C /* ZFNetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				189973381F7B85650037230C /* ZFNetworking.h */,
+				189973391F7B85650037230C /* ZFNetworking.m */,
+				189973371F7B84EA0037230C /* Reachability.h */,
+				189973361F7B84EA0037230C /* Reachability.m */,
+			);
+			path = ZFNetWorking;
 			sourceTree = "<group>";
 		};
 		18FD0ABC1F7AA57B00D9E65B = {
@@ -799,6 +816,7 @@
 				18FD0B611F7AAFE000D9E65B /* TFourModel.m in Sources */,
 				18FD0B1C1F7AAC4900D9E65B /* ZFBaseViewController.m in Sources */,
 				18379C221F7B429B00D6DC5A /* ZFOneModel.m in Sources */,
+				1899733A1F7B85650037230C /* ZFNetworking.m in Sources */,
 				18FD0ADB1F7AA57B00D9E65B /* main.m in Sources */,
 				18FD0ACA1F7AA57B00D9E65B /* AppDelegate.m in Sources */,
 				18379C251F7B4ADD00D6DC5A /* ZFBaseTableViewCell.m in Sources */,

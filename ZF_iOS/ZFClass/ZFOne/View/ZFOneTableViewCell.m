@@ -23,18 +23,29 @@
 
 - (void)initUI {
     
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.backgroundColor = [UIColor greenColor];
+    imageView.clipsToBounds = YES;
+    imageView.layer.cornerRadius = 8;
+    [self addSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self).offset(16);
+        make.centerY.equalTo(self);
+        make.width.height.mas_equalTo(16);
+    }];
+    
     UILabel *label = [[UILabel alloc] init];
     label.text = @"张木锋";
     [self addSubview:label];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).offset(16);
+        make.left.equalTo(imageView.mas_right).offset(8);
         make.right.equalTo(self).offset(-25);
         make.top.bottom.equalTo(self);
     }];
     self.label = label;
+    
     //my_indicator
     UIImageView *indiImageView = [[UIImageView alloc] init];
-    //    indiImageView.image = [UIImage imageNamed:@"edu_right_small"];
     indiImageView.image = [UIImage imageNamed:@"my_indicator"];
     indiImageView.backgroundColor = [UIColor whiteColor];
     [self addSubview:indiImageView];
