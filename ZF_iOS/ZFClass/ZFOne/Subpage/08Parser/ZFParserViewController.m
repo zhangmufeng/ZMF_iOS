@@ -1,22 +1,22 @@
 //
-//  ZFBaseViewController.m
+//  ZFParserViewController.m
 //  ZF_iOS
 //
-//  Created by 张木锋 on 2017/9/26.
+//  Created by 张木锋 on 2017/9/27.
 //  Copyright © 2017年 张木锋. All rights reserved.
 //
 
-#import "ZFBaseViewController.h"
+#import "ZFParserViewController.h"
 
-@interface ZFBaseViewController ()
+@interface ZFParserViewController ()
 
 @end
 
-@implementation ZFBaseViewController
+@implementation ZFParserViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cyanColor];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

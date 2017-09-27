@@ -9,6 +9,4 @@
 #ifndef ZFMacros_h
 #define ZFMacros_h
 
-
-
 #endif /* ZFMacros_h */

@@ -7,7 +7,10 @@
 //
 
 #import "ZFBaseViewController.h"
+#import "ZFOneTableView.h"
 
 @interface ZFOneViewController : ZFBaseViewController
+
+@property (strong, nonatomic) ZFOneTableView *oneTableView;
 
 @end

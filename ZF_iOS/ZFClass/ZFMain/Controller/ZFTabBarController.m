@@ -4,7 +4,7 @@
 //
 //  Created by 张木锋 on 2017/9/26.
 //  Copyright © 2017年 张木锋. All rights reserved.
-//
+//  window -> tabBarController -> navigationController -> viewController
 
 #import "ZFTabBarController.h"
 
@@ -16,7 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.tabBar.barTintColor = [UIColor yellowColor];
+    
+    UIViewController *one   = [self loadChildViewControllerWithClassNameString:@"ZFOneViewController" andTitle:@"One" andImageName:@"one"];
+    UIViewController *two   = [self loadChildViewControllerWithClassNameString:@"ZFTwoViewController" andTitle:@"Two" andImageName:@"one"];
+    UIViewController *Three = [self loadChildViewControllerWithClassNameString:@"ZFThreeViewController" andTitle:@"Three" andImageName:@"one"];
+    UIViewController *Four  = [self loadChildViewControllerWithClassNameString:@"ZFFourViewController" andTitle:@"Four" andImageName:@"one"];
+    self.viewControllers = @[one, two, Three, Four];
+}
+
+- (UIViewController *)loadChildViewControllerWithClassNameString:(NSString *)className andTitle:(NSString *)title andImageName:(NSString *)imageName {
+    
+    UIViewController *viewController = [[NSClassFromString(className) alloc] init];
+    viewController.title = title;
+    viewController.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    return [[NSClassFromString(@"ZFNavigationController") alloc] initWithRootViewController:viewController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +40,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
