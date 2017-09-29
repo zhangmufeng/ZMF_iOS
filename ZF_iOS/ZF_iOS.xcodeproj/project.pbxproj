@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181BEB1A1F7DE11E00E1C054 /* ZFFourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB191F7DE11E00E1C054 /* ZFFourModel.m */; };
+		181BEB1D1F7DE17700E1C054 /* ZFFourTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB1C1F7DE17700E1C054 /* ZFFourTableView.m */; };
+		181BEB201F7DE18C00E1C054 /* ZFFourTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB1F1F7DE18C00E1C054 /* ZFFourTableViewCell.m */; };
+		181BEB241F7DF43D00E1C054 /* UIColor+ZFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB231F7DF43D00E1C054 /* UIColor+ZFColor.m */; };
+		181BEB281F7E196600E1C054 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181BEB271F7E196600E1C054 /* SystemConfiguration.framework */; };
+		181BEB2A1F7E196E00E1C054 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181BEB291F7E196E00E1C054 /* Security.framework */; };
+		181BEB2C1F7E197D00E1C054 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 181BEB2B1F7E197D00E1C054 /* libz.tbd */; };
+		181BEB2E1F7E198900E1C054 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 181BEB2D1F7E198900E1C054 /* libc++.tbd */; };
+		181BEB341F7E1E4D00E1C054 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181BEB331F7E1E2C00E1C054 /* Bugly.framework */; };
+		181BEB3B1F7E1F1D00E1C054 /* ZFBuglyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB3A1F7E1F1D00E1C054 /* ZFBuglyViewController.m */; };
+		181BEB471F7E2CC400E1C054 /* ZFPerformanceOptimizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB451F7E2CA500E1C054 /* ZFPerformanceOptimizationViewController.m */; };
 		18379C1F1F7B41CB00D6DC5A /* ZFOneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18379C1E1F7B41CB00D6DC5A /* ZFOneTableView.m */; };
 		18379C221F7B429B00D6DC5A /* ZFOneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18379C211F7B429B00D6DC5A /* ZFOneModel.m */; };
 		18379C251F7B4ADD00D6DC5A /* ZFBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18379C241F7B4ADD00D6DC5A /* ZFBaseTableViewCell.m */; };
@@ -46,8 +57,6 @@
 		18FD0B581F7AAFA700D9E65B /* TestTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B571F7AAFA700D9E65B /* TestTwoView.m */; };
 		18FD0B5B1F7AAFC100D9E65B /* TThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B5A1F7AAFC100D9E65B /* TThreeModel.m */; };
 		18FD0B5E1F7AAFCF00D9E65B /* TThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B5D1F7AAFCF00D9E65B /* TThreeView.m */; };
-		18FD0B611F7AAFE000D9E65B /* TFourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B601F7AAFE000D9E65B /* TFourModel.m */; };
-		18FD0B641F7AAFEC00D9E65B /* TFourView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B631F7AAFEC00D9E65B /* TFourView.m */; };
 		3B25372194F91EFB502D9774 /* libPods-ZF_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B1EB79544F65AEB4348BC0 /* libPods-ZF_iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +78,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181BEB181F7DE11E00E1C054 /* ZFFourModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFourModel.h; sourceTree = "<group>"; };
+		181BEB191F7DE11E00E1C054 /* ZFFourModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFourModel.m; sourceTree = "<group>"; };
+		181BEB1B1F7DE17700E1C054 /* ZFFourTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFourTableView.h; sourceTree = "<group>"; };
+		181BEB1C1F7DE17700E1C054 /* ZFFourTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFourTableView.m; sourceTree = "<group>"; };
+		181BEB1E1F7DE18C00E1C054 /* ZFFourTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFourTableViewCell.h; sourceTree = "<group>"; };
+		181BEB1F1F7DE18C00E1C054 /* ZFFourTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFourTableViewCell.m; sourceTree = "<group>"; };
+		181BEB221F7DF43D00E1C054 /* UIColor+ZFColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZFColor.h"; sourceTree = "<group>"; };
+		181BEB231F7DF43D00E1C054 /* UIColor+ZFColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZFColor.m"; sourceTree = "<group>"; };
+		181BEB271F7E196600E1C054 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		181BEB291F7E196E00E1C054 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		181BEB2B1F7E197D00E1C054 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		181BEB2D1F7E198900E1C054 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		181BEB331F7E1E2C00E1C054 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		181BEB391F7E1F1D00E1C054 /* ZFBuglyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFBuglyViewController.h; sourceTree = "<group>"; };
+		181BEB3A1F7E1F1D00E1C054 /* ZFBuglyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFBuglyViewController.m; sourceTree = "<group>"; };
+		181BEB451F7E2CA500E1C054 /* ZFPerformanceOptimizationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFPerformanceOptimizationViewController.m; sourceTree = "<group>"; };
+		181BEB461F7E2CA600E1C054 /* ZFPerformanceOptimizationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFPerformanceOptimizationViewController.h; sourceTree = "<group>"; };
 		18379C1C1F7B319300D6DC5A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18379C1D1F7B41CB00D6DC5A /* ZFOneTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFOneTableView.h; sourceTree = "<group>"; };
 		18379C1E1F7B41CB00D6DC5A /* ZFOneTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFOneTableView.m; sourceTree = "<group>"; };
@@ -150,10 +176,6 @@
 		18FD0B5A1F7AAFC100D9E65B /* TThreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TThreeModel.m; sourceTree = "<group>"; };
 		18FD0B5C1F7AAFCF00D9E65B /* TThreeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TThreeView.h; sourceTree = "<group>"; };
 		18FD0B5D1F7AAFCF00D9E65B /* TThreeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TThreeView.m; sourceTree = "<group>"; };
-		18FD0B5F1F7AAFE000D9E65B /* TFourModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFourModel.h; sourceTree = "<group>"; };
-		18FD0B601F7AAFE000D9E65B /* TFourModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFourModel.m; sourceTree = "<group>"; };
-		18FD0B621F7AAFEC00D9E65B /* TFourView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFourView.h; sourceTree = "<group>"; };
-		18FD0B631F7AAFEC00D9E65B /* TFourView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFourView.m; sourceTree = "<group>"; };
 		18FD0B651F7AB07100D9E65B /* ZFMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMacros.h; sourceTree = "<group>"; };
 		18FD0B661F7AB08300D9E65B /* ZFURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFURL.h; sourceTree = "<group>"; };
 		1FF246CC79CA9B336C69305C /* Pods-ZF_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZF_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZF_iOS/Pods-ZF_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +188,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181BEB341F7E1E4D00E1C054 /* Bugly.framework in Frameworks */,
+				181BEB2E1F7E198900E1C054 /* libc++.tbd in Frameworks */,
+				181BEB2C1F7E197D00E1C054 /* libz.tbd in Frameworks */,
+				181BEB2A1F7E196E00E1C054 /* Security.framework in Frameworks */,
+				181BEB281F7E196600E1C054 /* SystemConfiguration.framework in Frameworks */,
 				3B25372194F91EFB502D9774 /* libPods-ZF_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +214,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181BEB211F7DF3BA00E1C054 /* ZFTools */ = {
+			isa = PBXGroup;
+			children = (
+				181BEB221F7DF43D00E1C054 /* UIColor+ZFColor.h */,
+				181BEB231F7DF43D00E1C054 /* UIColor+ZFColor.m */,
+			);
+			path = ZFTools;
+			sourceTree = "<group>";
+		};
+		181BEB321F7E1E0800E1C054 /* ZFFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				181BEB331F7E1E2C00E1C054 /* Bugly.framework */,
+			);
+			path = ZFFrameworks;
+			sourceTree = "<group>";
+		};
+		181BEB351F7E1EF600E1C054 /* 04Bugly */ = {
+			isa = PBXGroup;
+			children = (
+				181BEB361F7E1EF600E1C054 /* Controller */,
+				181BEB371F7E1EF600E1C054 /* Model */,
+				181BEB381F7E1EF600E1C054 /* View */,
+			);
+			path = 04Bugly;
+			sourceTree = "<group>";
+		};
+		181BEB361F7E1EF600E1C054 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				181BEB391F7E1F1D00E1C054 /* ZFBuglyViewController.h */,
+				181BEB3A1F7E1F1D00E1C054 /* ZFBuglyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		181BEB371F7E1EF600E1C054 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		181BEB381F7E1EF600E1C054 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		181BEB3C1F7E2B0900E1C054 /* 01PerformanceOptimization */ = {
+			isa = PBXGroup;
+			children = (
+				181BEB3D1F7E2B0900E1C054 /* Controller */,
+				181BEB3E1F7E2B0900E1C054 /* Model */,
+				181BEB3F1F7E2B0900E1C054 /* View */,
+			);
+			path = 01PerformanceOptimization;
+			sourceTree = "<group>";
+		};
+		181BEB3D1F7E2B0900E1C054 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				181BEB461F7E2CA600E1C054 /* ZFPerformanceOptimizationViewController.h */,
+				181BEB451F7E2CA500E1C054 /* ZFPerformanceOptimizationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		181BEB3E1F7E2B0900E1C054 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		181BEB3F1F7E2B0900E1C054 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		18379C291F7B5BC100D6DC5A /* Subpage */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +459,7 @@
 		18FD0AFD1F7AA78100D9E65B /* ZFClass */ = {
 			isa = PBXGroup;
 			children = (
+				181BEB211F7DF3BA00E1C054 /* ZFTools */,
 				18FD0B121F7AA78100D9E65B /* ZFApp */,
 				18FD0B0E1F7AA78100D9E65B /* ZFBase */,
 				18FD0B061F7AA78100D9E65B /* ZFMain */,
@@ -356,6 +467,7 @@
 				18FD0AFE1F7AA78100D9E65B /* ZFTwo */,
 				18FD0B131F7AA78100D9E65B /* ZFThree */,
 				18FD0B0A1F7AA78100D9E65B /* ZFFour */,
+				181BEB321F7E1E0800E1C054 /* ZFFrameworks */,
 			);
 			path = ZFClass;
 			sourceTree = "<group>";
@@ -462,6 +574,8 @@
 				18FD0B0B1F7AA78100D9E65B /* Controller */,
 				18FD0B0C1F7AA78100D9E65B /* Model */,
 				18FD0B0D1F7AA78100D9E65B /* View */,
+				181BEB3C1F7E2B0900E1C054 /* 01PerformanceOptimization */,
+				181BEB351F7E1EF600E1C054 /* 04Bugly */,
 			);
 			path = ZFFour;
 			sourceTree = "<group>";
@@ -478,8 +592,8 @@
 		18FD0B0C1F7AA78100D9E65B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				18FD0B5F1F7AAFE000D9E65B /* TFourModel.h */,
-				18FD0B601F7AAFE000D9E65B /* TFourModel.m */,
+				181BEB181F7DE11E00E1C054 /* ZFFourModel.h */,
+				181BEB191F7DE11E00E1C054 /* ZFFourModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -487,8 +601,10 @@
 		18FD0B0D1F7AA78100D9E65B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				18FD0B621F7AAFEC00D9E65B /* TFourView.h */,
-				18FD0B631F7AAFEC00D9E65B /* TFourView.m */,
+				181BEB1B1F7DE17700E1C054 /* ZFFourTableView.h */,
+				181BEB1C1F7DE17700E1C054 /* ZFFourTableView.m */,
+				181BEB1E1F7DE18C00E1C054 /* ZFFourTableViewCell.h */,
+				181BEB1F1F7DE18C00E1C054 /* ZFFourTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -590,6 +706,10 @@
 		C7600F237DD2D52CE0D17A85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				181BEB2D1F7E198900E1C054 /* libc++.tbd */,
+				181BEB2B1F7E197D00E1C054 /* libz.tbd */,
+				181BEB291F7E196E00E1C054 /* Security.framework */,
+				181BEB271F7E196600E1C054 /* SystemConfiguration.framework */,
 				A9B1EB79544F65AEB4348BC0 /* libPods-ZF_iOS.a */,
 			);
 			name = Frameworks;
@@ -791,11 +911,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181BEB471F7E2CC400E1C054 /* ZFPerformanceOptimizationViewController.m in Sources */,
+				181BEB3B1F7E1F1D00E1C054 /* ZFBuglyViewController.m in Sources */,
 				18FD0B551F7AAF9600D9E65B /* TestTwoModel.m in Sources */,
 				1899732E1F7B72170037230C /* ZFDeviceViewController.m in Sources */,
 				189973251F7B71E50037230C /* ZFGCDViewController.m in Sources */,
 				18FD0B191F7AAA4500D9E65B /* ZFConstString.m in Sources */,
-				18FD0B641F7AAFEC00D9E65B /* TFourView.m in Sources */,
 				18FD0B431F7AAEC100D9E65B /* ZFOneViewController.m in Sources */,
 				18FD0B461F7AAED100D9E65B /* ZFTwoViewController.m in Sources */,
 				18379C281F7B4AFF00D6DC5A /* ZFOneTableViewCell.m in Sources */,
@@ -812,19 +933,22 @@
 				18FD0B5E1F7AAFCF00D9E65B /* TThreeView.m in Sources */,
 				1899731F1F7B71C50037230C /* ZFNetworkingViewController.m in Sources */,
 				18FD0B491F7AAEDD00D9E65B /* ZFThreeViewController.m in Sources */,
+				181BEB1D1F7DE17700E1C054 /* ZFFourTableView.m in Sources */,
 				18FD0B311F7AADD900D9E65B /* ZFTabBarController.m in Sources */,
-				18FD0B611F7AAFE000D9E65B /* TFourModel.m in Sources */,
 				18FD0B1C1F7AAC4900D9E65B /* ZFBaseViewController.m in Sources */,
 				18379C221F7B429B00D6DC5A /* ZFOneModel.m in Sources */,
 				1899733A1F7B85650037230C /* ZFNetworking.m in Sources */,
 				18FD0ADB1F7AA57B00D9E65B /* main.m in Sources */,
 				18FD0ACA1F7AA57B00D9E65B /* AppDelegate.m in Sources */,
+				181BEB241F7DF43D00E1C054 /* UIColor+ZFColor.m in Sources */,
 				18379C251F7B4ADD00D6DC5A /* ZFBaseTableViewCell.m in Sources */,
 				18FD0B581F7AAFA700D9E65B /* TestTwoView.m in Sources */,
+				181BEB1A1F7DE11E00E1C054 /* ZFFourModel.m in Sources */,
 				18379C1F1F7B41CB00D6DC5A /* ZFOneTableView.m in Sources */,
 				189973341F7B723C0037230C /* ZFParserViewController.m in Sources */,
 				18FD0B5B1F7AAFC100D9E65B /* TThreeModel.m in Sources */,
 				1899732B1F7B72040037230C /* ZFPopViewViewController.m in Sources */,
+				181BEB201F7DE18C00E1C054 /* ZFFourTableViewCell.m in Sources */,
 				18FD0B1F1F7AAC6400D9E65B /* ZFBaseTableViewController.m in Sources */,
 				18FD0B2E1F7AADBA00D9E65B /* ZFNavigationController.m in Sources */,
 			);
@@ -992,12 +1116,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F3XTCE8S9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZFClass/ZFFrameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZF_iOS/PrefixHeader.pch";
 				INFOPLIST_FILE = ZF_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "COM.ZMF.ZF-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = COM.ZMF.ZF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1010,12 +1138,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F3XTCE8S9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZFClass/ZFFrameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZF_iOS/PrefixHeader.pch";
 				INFOPLIST_FILE = ZF_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "COM.ZMF.ZF-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = COM.ZMF.ZF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

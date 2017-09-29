@@ -53,13 +53,14 @@
 }
 #pragma mark - 设置
 - (void)setting {
-    
+    self.view.backgroundColor = [UIColor yellowColor];
     self.oneTableView = [[ZFOneTableView alloc] initWithFrame:self.view.bounds style:(UITableViewStylePlain)];
     self.view = self.oneTableView;
     self.oneTableView.rowHeight = 60;
     self.oneTableView.delegate = self;
     self.oneTableView.dataSource = self;
     self.oneTableView.tableFooterView = [[UIView alloc] init];
+    
     [self.oneTableView registerClass:[ZFOneTableViewCell class] forCellReuseIdentifier:kOneCellID];
 }
 #pragma mark - 数据源

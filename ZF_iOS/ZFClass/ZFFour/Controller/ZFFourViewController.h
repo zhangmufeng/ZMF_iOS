@@ -7,7 +7,11 @@
 //
 
 #import "ZFBaseViewController.h"
+#import "ZFFourTableView.h"
 
 @interface ZFFourViewController : ZFBaseViewController
 
+@property (strong, nonatomic) ZFFourTableView *fourTableView;
+
 @end
+

@@ -4,7 +4,8 @@
 //
 //  Created by 张木锋 on 2017/9/26.
 //  Copyright © 2017年 张木锋. All rights reserved.
-//
+//  AppID  9ce7664623
+//  AppKey 3e3205e1-6c5f-4c0a-917b-83c1986f7def
 
 #import "AppDelegate.h"
 
@@ -17,7 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    sleep(3.0f);
+    sleep(1.0f);
+    // Bugly
+    [Bugly startWithAppId:@"9ce7664623"];
     
     [[UIApplication sharedApplication] setStatusBarStyle:(UIStatusBarStyleLightContent)];
     
