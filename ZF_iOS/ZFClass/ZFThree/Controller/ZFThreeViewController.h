@@ -7,7 +7,11 @@
 //
 
 #import "ZFBaseViewController.h"
-
+#import "ZFThreeCollectionView.h"
+#import "ZFThreeCollectionViewCell.h"
+#import "ZFCollectionViewFlowLayout.h"
 @interface ZFThreeViewController : ZFBaseViewController
+
+@property (strong, nonatomic) ZFThreeCollectionView *threeCollectionView;
 
 @end

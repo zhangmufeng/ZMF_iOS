@@ -31,6 +31,9 @@
 		189973311F7B722B0037230C /* ZFRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973301F7B722B0037230C /* ZFRACViewController.m */; };
 		189973341F7B723C0037230C /* ZFParserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973331F7B723C0037230C /* ZFParserViewController.m */; };
 		1899733A1F7B85650037230C /* ZFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973391F7B85650037230C /* ZFNetworking.m */; };
+		18AE20381F8B6A2A0076C334 /* ZFThreeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE20371F8B6A2A0076C334 /* ZFThreeCollectionView.m */; };
+		18AE203B1F8B6A400076C334 /* ZFThreeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE203A1F8B6A400076C334 /* ZFThreeCollectionViewCell.m */; };
+		18AE203E1F8B6B910076C334 /* ZFCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE203D1F8B6B910076C334 /* ZFCollectionViewFlowLayout.m */; };
 		18FD0ACA1F7AA57B00D9E65B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0AC91F7AA57B00D9E65B /* AppDelegate.m */; };
 		18FD0ACD1F7AA57B00D9E65B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0ACC1F7AA57B00D9E65B /* ViewController.m */; };
 		18FD0AD01F7AA57B00D9E65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FD0ACE1F7AA57B00D9E65B /* Main.storyboard */; };
@@ -56,7 +59,6 @@
 		18FD0B551F7AAF9600D9E65B /* TestTwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B541F7AAF9600D9E65B /* TestTwoModel.m */; };
 		18FD0B581F7AAFA700D9E65B /* TestTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B571F7AAFA700D9E65B /* TestTwoView.m */; };
 		18FD0B5B1F7AAFC100D9E65B /* TThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B5A1F7AAFC100D9E65B /* TThreeModel.m */; };
-		18FD0B5E1F7AAFCF00D9E65B /* TThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD0B5D1F7AAFCF00D9E65B /* TThreeView.m */; };
 		3B25372194F91EFB502D9774 /* libPods-ZF_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B1EB79544F65AEB4348BC0 /* libPods-ZF_iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +127,12 @@
 		189973371F7B84EA0037230C /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		189973381F7B85650037230C /* ZFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFNetworking.h; sourceTree = "<group>"; };
 		189973391F7B85650037230C /* ZFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFNetworking.m; sourceTree = "<group>"; };
+		18AE20361F8B6A2A0076C334 /* ZFThreeCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFThreeCollectionView.h; sourceTree = "<group>"; };
+		18AE20371F8B6A2A0076C334 /* ZFThreeCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFThreeCollectionView.m; sourceTree = "<group>"; };
+		18AE20391F8B6A400076C334 /* ZFThreeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFThreeCollectionViewCell.h; sourceTree = "<group>"; };
+		18AE203A1F8B6A400076C334 /* ZFThreeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFThreeCollectionViewCell.m; sourceTree = "<group>"; };
+		18AE203C1F8B6B910076C334 /* ZFCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		18AE203D1F8B6B910076C334 /* ZFCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		18FD0AC51F7AA57B00D9E65B /* ZF_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZF_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FD0AC81F7AA57B00D9E65B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18FD0AC91F7AA57B00D9E65B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -174,8 +182,6 @@
 		18FD0B571F7AAFA700D9E65B /* TestTwoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTwoView.m; sourceTree = "<group>"; };
 		18FD0B591F7AAFC100D9E65B /* TThreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TThreeModel.h; sourceTree = "<group>"; };
 		18FD0B5A1F7AAFC100D9E65B /* TThreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TThreeModel.m; sourceTree = "<group>"; };
-		18FD0B5C1F7AAFCF00D9E65B /* TThreeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TThreeView.h; sourceTree = "<group>"; };
-		18FD0B5D1F7AAFCF00D9E65B /* TThreeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TThreeView.m; sourceTree = "<group>"; };
 		18FD0B651F7AB07100D9E65B /* ZFMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMacros.h; sourceTree = "<group>"; };
 		18FD0B661F7AB08300D9E65B /* ZFURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFURL.h; sourceTree = "<group>"; };
 		1FF246CC79CA9B336C69305C /* Pods-ZF_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZF_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZF_iOS/Pods-ZF_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -697,8 +703,12 @@
 		18FD0B161F7AA78100D9E65B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				18FD0B5C1F7AAFCF00D9E65B /* TThreeView.h */,
-				18FD0B5D1F7AAFCF00D9E65B /* TThreeView.m */,
+				18AE20361F8B6A2A0076C334 /* ZFThreeCollectionView.h */,
+				18AE20371F8B6A2A0076C334 /* ZFThreeCollectionView.m */,
+				18AE20391F8B6A400076C334 /* ZFThreeCollectionViewCell.h */,
+				18AE203A1F8B6A400076C334 /* ZFThreeCollectionViewCell.m */,
+				18AE203C1F8B6B910076C334 /* ZFCollectionViewFlowLayout.h */,
+				18AE203D1F8B6B910076C334 /* ZFCollectionViewFlowLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -912,6 +922,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181BEB471F7E2CC400E1C054 /* ZFPerformanceOptimizationViewController.m in Sources */,
+				18AE20381F8B6A2A0076C334 /* ZFThreeCollectionView.m in Sources */,
 				181BEB3B1F7E1F1D00E1C054 /* ZFBuglyViewController.m in Sources */,
 				18FD0B551F7AAF9600D9E65B /* TestTwoModel.m in Sources */,
 				1899732E1F7B72170037230C /* ZFDeviceViewController.m in Sources */,
@@ -930,11 +941,11 @@
 				189973281F7B71F40037230C /* ZFNSOperationViewController.m in Sources */,
 				18FD0B251F7AAC8B00D9E65B /* ZFModel.m in Sources */,
 				18FD0AD31F7AA57B00D9E65B /* ZF_iOS.xcdatamodeld in Sources */,
-				18FD0B5E1F7AAFCF00D9E65B /* TThreeView.m in Sources */,
 				1899731F1F7B71C50037230C /* ZFNetworkingViewController.m in Sources */,
 				18FD0B491F7AAEDD00D9E65B /* ZFThreeViewController.m in Sources */,
 				181BEB1D1F7DE17700E1C054 /* ZFFourTableView.m in Sources */,
 				18FD0B311F7AADD900D9E65B /* ZFTabBarController.m in Sources */,
+				18AE203B1F8B6A400076C334 /* ZFThreeCollectionViewCell.m in Sources */,
 				18FD0B1C1F7AAC4900D9E65B /* ZFBaseViewController.m in Sources */,
 				18379C221F7B429B00D6DC5A /* ZFOneModel.m in Sources */,
 				1899733A1F7B85650037230C /* ZFNetworking.m in Sources */,
@@ -942,6 +953,7 @@
 				18FD0ACA1F7AA57B00D9E65B /* AppDelegate.m in Sources */,
 				181BEB241F7DF43D00E1C054 /* UIColor+ZFColor.m in Sources */,
 				18379C251F7B4ADD00D6DC5A /* ZFBaseTableViewCell.m in Sources */,
+				18AE203E1F8B6B910076C334 /* ZFCollectionViewFlowLayout.m in Sources */,
 				18FD0B581F7AAFA700D9E65B /* TestTwoView.m in Sources */,
 				181BEB1A1F7DE11E00E1C054 /* ZFFourModel.m in Sources */,
 				18379C1F1F7B41CB00D6DC5A /* ZFOneTableView.m in Sources */,

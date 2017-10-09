@@ -9,6 +9,7 @@
 #ifndef ZFEnum_h
 #define ZFEnum_h
 
+
 //typedef NS_ENUM(NSUInteger, ZFEnumZF) {
 //    ZFEnumA,
 //    ZFEnumB,
@@ -21,7 +22,7 @@
 //};
 //
 //typedef enum : NSUInteger {
-//    ZFEnumA,
+//    ZFEnumA, 
 //    ZFEnumB,
 //    ZFEnumC,
 //} ZFEnum;
