@@ -24,9 +24,16 @@ class ZFSwiftGrammarViewController: UIViewController {
     }
     
     func TestDemo01() {
-        let a = 10;
-        var b = 20;
+        // 常量可选项要设置初始值才可以使用，因为他没有初始值
+        let _:Int? = 1
+        let b:Int? = 10
+        // 变量可选项初始值默认为nil，可以不设置初始值就可以使用
+        var c:Int?
+        var d:Int? = 20
   
+        d = 30
+        
+        print(b,c,d) //Optional(10) nil Optional(20)
     }
 
     override func didReceiveMemoryWarning() {
