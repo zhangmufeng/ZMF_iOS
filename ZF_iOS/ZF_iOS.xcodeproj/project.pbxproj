@@ -35,6 +35,9 @@
 		189973311F7B722B0037230C /* ZFRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973301F7B722B0037230C /* ZFRACViewController.m */; };
 		189973341F7B723C0037230C /* ZFParserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973331F7B723C0037230C /* ZFParserViewController.m */; };
 		1899733A1F7B85650037230C /* ZFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 189973391F7B85650037230C /* ZFNetworking.m */; };
+		18A2155C1F974660008AA880 /* ZFWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A2155B1F974660008AA880 /* ZFWelcomeView.m */; };
+		18A2155D1F9752A7008AA880 /* ZFWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A215581F974646008AA880 /* ZFWelcomeViewController.m */; };
+		18A6AA981F96E886003631C1 /* UIView+RollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6AA961F96E885003631C1 /* UIView+RollView.m */; };
 		18AE20381F8B6A2A0076C334 /* ZFThreeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE20371F8B6A2A0076C334 /* ZFThreeCollectionView.m */; };
 		18AE203B1F8B6A400076C334 /* ZFThreeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE203A1F8B6A400076C334 /* ZFThreeCollectionViewCell.m */; };
 		18AE203E1F8B6B910076C334 /* ZFCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE203D1F8B6B910076C334 /* ZFCollectionViewFlowLayout.m */; };
@@ -133,6 +136,12 @@
 		189973371F7B84EA0037230C /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		189973381F7B85650037230C /* ZFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFNetworking.h; sourceTree = "<group>"; };
 		189973391F7B85650037230C /* ZFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFNetworking.m; sourceTree = "<group>"; };
+		18A215581F974646008AA880 /* ZFWelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFWelcomeViewController.m; sourceTree = "<group>"; };
+		18A215591F974646008AA880 /* ZFWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFWelcomeViewController.h; sourceTree = "<group>"; };
+		18A2155A1F974660008AA880 /* ZFWelcomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFWelcomeView.h; sourceTree = "<group>"; };
+		18A2155B1F974660008AA880 /* ZFWelcomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFWelcomeView.m; sourceTree = "<group>"; };
+		18A6AA961F96E885003631C1 /* UIView+RollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RollView.m"; sourceTree = "<group>"; };
+		18A6AA971F96E885003631C1 /* UIView+RollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RollView.h"; sourceTree = "<group>"; };
 		18AE20361F8B6A2A0076C334 /* ZFThreeCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFThreeCollectionView.h; sourceTree = "<group>"; };
 		18AE20371F8B6A2A0076C334 /* ZFThreeCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFThreeCollectionView.m; sourceTree = "<group>"; };
 		18AE20391F8B6A400076C334 /* ZFThreeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFThreeCollectionViewCell.h; sourceTree = "<group>"; };
@@ -234,6 +243,8 @@
 		181BEB211F7DF3BA00E1C054 /* ZFTools */ = {
 			isa = PBXGroup;
 			children = (
+				18A6AA971F96E885003631C1 /* UIView+RollView.h */,
+				18A6AA961F96E885003631C1 /* UIView+RollView.m */,
 				181BEB221F7DF43D00E1C054 /* UIColor+ZFColor.h */,
 				181BEB231F7DF43D00E1C054 /* UIColor+ZFColor.m */,
 			);
@@ -413,6 +424,40 @@
 			path = ZFNetWorking;
 			sourceTree = "<group>";
 		};
+		18A2153C1F97201D008AA880 /* ZFResource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZFResource;
+			sourceTree = "<group>";
+		};
+		18A215551F974619008AA880 /* ZFWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				18A215561F974619008AA880 /* Controller */,
+				18A215571F974619008AA880 /* View */,
+			);
+			path = ZFWelcome;
+			sourceTree = "<group>";
+		};
+		18A215561F974619008AA880 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18A215591F974646008AA880 /* ZFWelcomeViewController.h */,
+				18A215581F974646008AA880 /* ZFWelcomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18A215571F974619008AA880 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18A2155A1F974660008AA880 /* ZFWelcomeView.h */,
+				18A2155B1F974660008AA880 /* ZFWelcomeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		18FD0ABC1F7AA57B00D9E65B = {
 			isa = PBXGroup;
 			children = (
@@ -477,8 +522,10 @@
 			isa = PBXGroup;
 			children = (
 				181BEB211F7DF3BA00E1C054 /* ZFTools */,
+				18A2153C1F97201D008AA880 /* ZFResource */,
 				18FD0B121F7AA78100D9E65B /* ZFApp */,
 				18FD0B0E1F7AA78100D9E65B /* ZFBase */,
+				18A215551F974619008AA880 /* ZFWelcome */,
 				18FD0B061F7AA78100D9E65B /* ZFMain */,
 				18FD0B021F7AA78100D9E65B /* ZFOne */,
 				18FD0AFE1F7AA78100D9E65B /* ZFTwo */,
@@ -933,17 +980,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A2155D1F9752A7008AA880 /* ZFWelcomeViewController.m in Sources */,
 				181BEB471F7E2CC400E1C054 /* ZFPerformanceOptimizationViewController.m in Sources */,
 				18AE20381F8B6A2A0076C334 /* ZFThreeCollectionView.m in Sources */,
 				181BEB3B1F7E1F1D00E1C054 /* ZFBuglyViewController.m in Sources */,
 				1899732E1F7B72170037230C /* ZFDeviceViewController.m in Sources */,
 				189973251F7B71E50037230C /* ZFGCDViewController.m in Sources */,
+				18A2155C1F974660008AA880 /* ZFWelcomeView.m in Sources */,
 				18FD0B191F7AAA4500D9E65B /* ZFConstString.m in Sources */,
 				18FD0B431F7AAEC100D9E65B /* ZFOneViewController.m in Sources */,
 				18FD0B461F7AAED100D9E65B /* ZFTwoViewController.m in Sources */,
 				18379C281F7B4AFF00D6DC5A /* ZFOneTableViewCell.m in Sources */,
 				189973221F7B71D70037230C /* ZFBlockViewController.m in Sources */,
 				189973311F7B722B0037230C /* ZFRACViewController.m in Sources */,
+				18A6AA981F96E886003631C1 /* UIView+RollView.m in Sources */,
 				18FD0B2B1F7AACCE00D9E65B /* ZFBaseTabBarController.m in Sources */,
 				18FD0B4C1F7AAEE900D9E65B /* ZFFourViewController.m in Sources */,
 				18FD0ACD1F7AA57B00D9E65B /* ViewController.m in Sources */,

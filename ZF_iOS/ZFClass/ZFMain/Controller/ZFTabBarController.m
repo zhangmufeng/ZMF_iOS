@@ -17,12 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tabBar.barTintColor = [UIColor colorWithHexString:@"#91D355"];;
-    
-    UIViewController *one   = [self loadChildViewControllerWithClassNameString:@"ZFOneViewController" andTitle:@"Functions" andImageName:@"one"];
-    UIViewController *two   = [self loadChildViewControllerWithClassNameString:@"ZFTwoViewController" andTitle:@"Swift" andImageName:@"one"];
-    UIViewController *Three = [self loadChildViewControllerWithClassNameString:@"ZFThreeViewController" andTitle:@"Animation" andImageName:@"one"];
-    UIViewController *Four  = [self loadChildViewControllerWithClassNameString:@"ZFFourViewController" andTitle:@"Frameworks" andImageName:@"one"];
+    self.tabBar.barTintColor = [UIColor colorWithHexString:@"#91D355"];
+    UIViewController *one   = [self loadChildViewControllerWithClassNameString:@"ZFOneViewController"   andTitle:@"Functions"  andImageName:@"one"];
+    UIViewController *two   = [self loadChildViewControllerWithClassNameString:@"ZFTwoViewController"   andTitle:@"Swift"      andImageName:@"one"];
+    UIViewController *Three = [self loadChildViewControllerWithClassNameString:@"ZFThreeViewController" andTitle:@"Animation"  andImageName:@"one"];
+    UIViewController *Four  = [self loadChildViewControllerWithClassNameString:@"ZFFourViewController"  andTitle:@"Frameworks" andImageName:@"one"];
     self.viewControllers = @[one, two, Three, Four];
 }
 
@@ -37,7 +36,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
 
 

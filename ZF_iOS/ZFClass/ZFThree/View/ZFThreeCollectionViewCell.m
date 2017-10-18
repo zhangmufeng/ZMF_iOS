@@ -19,7 +19,7 @@
 }
 
 - (void)initUI {
-    
+    self.backgroundColor = [UIColor redColor];
 }
 
 

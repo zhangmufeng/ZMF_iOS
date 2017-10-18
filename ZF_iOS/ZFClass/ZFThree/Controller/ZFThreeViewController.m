@@ -21,32 +21,35 @@ static NSString *identifier = @"ZFThreeCollectionViewCellID";
 }
 #pragma mark - 设置
 - (void)setting {
-    self.threeCollectionView.delegate = self;
-    self.threeCollectionView.dataSource = self;
+
     
 }
 #pragma mark - 加载视图
 - (void)initUI{
-
+    [self.view addSubview:self.threeCollectionView];
+    self.threeCollectionView.delegate = self;
+    self.threeCollectionView.dataSource = self;
+    [self.threeCollectionView registerClass:[ZFThreeCollectionViewCell class] forCellWithReuseIdentifier:identifier];
+    
 }
 #pragma mark - 数据源方法
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 2;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
+    return 8;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     //根据identifier从缓冲池里去出cell
     ZFThreeCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor orangeColor];
+
     
     return cell;
 }
 #pragma mark - 懒加载CollectionCiew
 - (ZFThreeCollectionView *)threeCollectionView {
-    
+
     if (!_threeCollectionView) {
         ZFCollectionViewFlowLayout *collectionViewFlowLayout = [[ZFCollectionViewFlowLayout alloc] init];
         _threeCollectionView = [[ZFThreeCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:collectionViewFlowLayout];

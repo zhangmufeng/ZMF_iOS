@@ -9,6 +9,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -18,17 +19,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    sleep(1.0f);
-    // Bugly
-    [Bugly startWithAppId:@"9ce7664623"];
+    //  sleep(1.0f);
+    NSLog(@"%@",launchOptions);
+    [Bugly startWithAppId:@"9ce7664623"]; // Bugly
     
     [[UIApplication sharedApplication] setStatusBarStyle:(UIStatusBarStyleLightContent)];
     
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[NSClassFromString(@"ZFTabBarController") alloc] init];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    
+    
+
+    
+    BOOL isNewVersion ;
+    NSString *versionKey = @"ZFCFBundleShortVersionString";
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:versionKey];
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[versionKey];
+
+    if ([lastVersion isEqualToString:currentVersion]) {
+        isNewVersion = NO;
+    } else {
+        isNewVersion = YES;
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:versionKey];
+    }
+    if (isNewVersion) {
+        self.window.rootViewController = [[NSClassFromString(@"ZFWelcomeViewController") alloc] init];
+    } else {
+        self.window.rootViewController = [[NSClassFromString(@"ZFTabBarController") alloc] init];
+    }
+
     return YES;
 }
 

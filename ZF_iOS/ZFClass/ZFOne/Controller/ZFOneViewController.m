@@ -55,7 +55,12 @@
 - (void)setting {
     self.view.backgroundColor = [UIColor yellowColor];
     self.oneTableView = [[ZFOneTableView alloc] initWithFrame:self.view.bounds style:(UITableViewStylePlain)];
-    self.view = self.oneTableView;
+    [self.view addSubview:self.oneTableView];
+//    if (@available(iOS 11.0, *)) {
+//        [NSLayoutConstraint constraintWithItem:self.view.safeAreaLayoutGuide attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.oneTableView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0];
+//    } else {
+//        // Fallback on earlier versions
+//    }
     self.oneTableView.rowHeight = 60;
     self.oneTableView.delegate = self;
     self.oneTableView.dataSource = self;

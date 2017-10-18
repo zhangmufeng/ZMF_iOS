@@ -14,6 +14,7 @@
     
     if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
         
+        self.backgroundColor = [UIColor yellowColor];
     }
     return self;
 }

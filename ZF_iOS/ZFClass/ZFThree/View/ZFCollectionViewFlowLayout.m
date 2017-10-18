@@ -20,10 +20,11 @@
  @property (nonatomic) CGSize footerReferenceSize;
  */
 - (void)prepareLayout {
-    self.minimumLineSpacing = 0;
-    self.minimumInteritemSpacing = 0;
-    
-    
+    self.minimumLineSpacing = 10;        // 行间距
+    self.minimumInteritemSpacing = 10;  // 列间距
+    self.itemSize = CGSizeMake(60, 60);
+    self.headerReferenceSize = CGSizeMake(100, 100);
+    self.footerReferenceSize = CGSizeMake(0, 100);
 }
 
 @end
