@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tabBar.barTintColor = [UIColor colorWithHexString:@"#91D355"];
-    UIViewController *one   = [self loadChildViewControllerWithClassNameString:@"ZFOneViewController"   andTitle:@"Functions"  andImageName:@"one"];
+    self.tabBar.barTintColor = [UIColor colorWithHexString:@"#EAEAEA"];
+    self.tabBar.barTintColor = [UIColor blackColor];
+    UIViewController *one   = [self loadChildViewControllerWithClassNameString:@"ZFFunctionsViewController"   andTitle:@"Function"  andImageName:@"one"];
     UIViewController *two   = [self loadChildViewControllerWithClassNameString:@"ZFTwoViewController"   andTitle:@"Swift"      andImageName:@"one"];
     UIViewController *Three = [self loadChildViewControllerWithClassNameString:@"ZFThreeViewController" andTitle:@"Animation"  andImageName:@"one"];
     UIViewController *Four  = [self loadChildViewControllerWithClassNameString:@"ZFFourViewController"  andTitle:@"Frameworks" andImageName:@"one"];
@@ -30,7 +31,8 @@
     UIViewController *viewController = [[NSClassFromString(className) alloc] init];
     viewController.title = title;
     viewController.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
-    viewController.view.backgroundColor = [UIColor whiteColor];
+    // viewController.view.backgroundColor = [UIColor whiteColor];
+
     return [[NSClassFromString(@"ZFNavigationController") alloc] initWithRootViewController:viewController];
 }
 

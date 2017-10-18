@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.navigationBar.barTintColor = [UIColor colorWithHexString:@"#91D355"];
+    self.navigationBar.barTintColor = [UIColor colorWithHexString:@"#EAEAEA"];
+    self.navigationBar.barTintColor = [UIColor blackColor];
 }
 
 - (void)didReceiveMemoryWarning {

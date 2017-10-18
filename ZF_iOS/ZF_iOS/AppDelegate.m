@@ -11,7 +11,7 @@
 
 
 @interface AppDelegate ()
-
+@property (assign, nonatomic) BOOL isNewVersion;
 @end
 
 @implementation AppDelegate
@@ -19,8 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //  sleep(1.0f);
-    NSLog(@"%@",launchOptions);
     [Bugly startWithAppId:@"9ce7664623"]; // Bugly
     
     [[UIApplication sharedApplication] setStatusBarStyle:(UIStatusBarStyleLightContent)];
@@ -30,22 +28,18 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    
-    
 
-    
-    BOOL isNewVersion ;
-    NSString *versionKey = @"ZFCFBundleShortVersionString";
+    NSString *versionKey = @"CFBundleShortVersionString";
     NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:versionKey];
     NSString *currentVersion = [NSBundle mainBundle].infoDictionary[versionKey];
 
     if ([lastVersion isEqualToString:currentVersion]) {
-        isNewVersion = NO;
+        self.isNewVersion = NO;
     } else {
-        isNewVersion = YES;
+        self.isNewVersion = YES;
         [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:versionKey];
     }
-    if (isNewVersion) {
+    if (self.isNewVersion) {
         self.window.rootViewController = [[NSClassFromString(@"ZFWelcomeViewController") alloc] init];
     } else {
         self.window.rootViewController = [[NSClassFromString(@"ZFTabBarController") alloc] init];

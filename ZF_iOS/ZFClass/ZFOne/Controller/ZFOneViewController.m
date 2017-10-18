@@ -33,7 +33,7 @@
 }
 #pragma mark - 加载本地数据
 - (void)loadStaticData {
-    NSArray *arr = @[ @{@"title" : @"NetWorking"},//@{@"title" : @""},
+    NSArray *arr = @[ @{@"title" : @"轮播"},//@{@"title" : @""},
                       @{@"title" : @"block"},
                       @{@"title" : @"GCD"},
                       @{@"title" : @"NSOperation"},
@@ -55,7 +55,7 @@
 - (void)setting {
     self.view.backgroundColor = [UIColor yellowColor];
     self.oneTableView = [[ZFOneTableView alloc] initWithFrame:self.view.bounds style:(UITableViewStylePlain)];
-    [self.view addSubview:self.oneTableView];
+//    [self.view addSubview:self.oneTableView];
 //    if (@available(iOS 11.0, *)) {
 //        [NSLayoutConstraint constraintWithItem:self.view.safeAreaLayoutGuide attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.oneTableView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0];
 //    } else {
