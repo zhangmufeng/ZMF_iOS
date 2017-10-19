@@ -11,6 +11,6 @@
 @interface ZFWelcomeView : UIView
 
 @property (nonatomic, strong) NSArray<NSString *> *imageNamesArr; // 接收控制器传入的所有图片名称
-@property (nonatomic, strong) UIImageView *imageView; // 最后一个imageView
+@property (nonatomic, strong) UIImageView *imageView;             // 最后一个imageView  需添加点击手势
 
 @end

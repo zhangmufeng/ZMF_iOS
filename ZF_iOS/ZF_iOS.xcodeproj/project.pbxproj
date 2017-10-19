@@ -10,6 +10,8 @@
 		1802E8D31F8CB2250056F9C1 /* ZFTwoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802E8D21F8CB2250056F9C1 /* ZFTwoModel.swift */; };
 		1802E8D71F8CBBDE0056F9C1 /* ZFSwiftGrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802E8D61F8CBBDE0056F9C1 /* ZFSwiftGrammarViewController.swift */; };
 		1802E8D91F8CC0B70056F9C1 /* ZFTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802E8D81F8CC0B70056F9C1 /* ZFTwoTableViewCell.swift */; };
+		1814904E1F98A21C0047FFF4 /* ZFFunctionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814904D1F98A21C0047FFF4 /* ZFFunctionsView.m */; };
+		181490541F98A3240047FFF4 /* ZFFirstSinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181490531F98A3240047FFF4 /* ZFFirstSinView.m */; };
 		181BEB1A1F7DE11E00E1C054 /* ZFFourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB191F7DE11E00E1C054 /* ZFFourModel.m */; };
 		181BEB1D1F7DE17700E1C054 /* ZFFourTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB1C1F7DE17700E1C054 /* ZFFourTableView.m */; };
 		181BEB201F7DE18C00E1C054 /* ZFFourTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB1F1F7DE18C00E1C054 /* ZFFourTableViewCell.m */; };
@@ -89,6 +91,10 @@
 		1802E8D21F8CB2250056F9C1 /* ZFTwoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFTwoModel.swift; sourceTree = "<group>"; };
 		1802E8D61F8CBBDE0056F9C1 /* ZFSwiftGrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFSwiftGrammarViewController.swift; sourceTree = "<group>"; };
 		1802E8D81F8CC0B70056F9C1 /* ZFTwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFTwoTableViewCell.swift; sourceTree = "<group>"; };
+		1814904C1F98A21C0047FFF4 /* ZFFunctionsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFunctionsView.h; sourceTree = "<group>"; };
+		1814904D1F98A21C0047FFF4 /* ZFFunctionsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFunctionsView.m; sourceTree = "<group>"; };
+		181490521F98A3240047FFF4 /* ZFFirstSinView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFirstSinView.h; sourceTree = "<group>"; };
+		181490531F98A3240047FFF4 /* ZFFirstSinView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFirstSinView.m; sourceTree = "<group>"; };
 		181BEB181F7DE11E00E1C054 /* ZFFourModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFourModel.h; sourceTree = "<group>"; };
 		181BEB191F7DE11E00E1C054 /* ZFFourModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFourModel.m; sourceTree = "<group>"; };
 		181BEB1B1F7DE17700E1C054 /* ZFFourTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFourTableView.h; sourceTree = "<group>"; };
@@ -614,6 +620,10 @@
 				18379C1E1F7B41CB00D6DC5A /* ZFOneTableView.m */,
 				18379C261F7B4AFF00D6DC5A /* ZFOneTableViewCell.h */,
 				18379C271F7B4AFF00D6DC5A /* ZFOneTableViewCell.m */,
+				1814904C1F98A21C0047FFF4 /* ZFFunctionsView.h */,
+				1814904D1F98A21C0047FFF4 /* ZFFunctionsView.m */,
+				181490521F98A3240047FFF4 /* ZFFirstSinView.h */,
+				181490531F98A3240047FFF4 /* ZFFirstSinView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -993,6 +1003,7 @@
 				189973251F7B71E50037230C /* ZFGCDViewController.m in Sources */,
 				18A2155C1F974660008AA880 /* ZFWelcomeView.m in Sources */,
 				18FD0B191F7AAA4500D9E65B /* ZFConstString.m in Sources */,
+				1814904E1F98A21C0047FFF4 /* ZFFunctionsView.m in Sources */,
 				18FD0B431F7AAEC100D9E65B /* ZFOneViewController.m in Sources */,
 				18FD0B461F7AAED100D9E65B /* ZFTwoViewController.m in Sources */,
 				18379C281F7B4AFF00D6DC5A /* ZFOneTableViewCell.m in Sources */,
@@ -1032,6 +1043,7 @@
 				1899732B1F7B72040037230C /* ZFPopViewViewController.m in Sources */,
 				181BEB201F7DE18C00E1C054 /* ZFFourTableViewCell.m in Sources */,
 				18FD0B1F1F7AAC6400D9E65B /* ZFBaseTableViewController.m in Sources */,
+				181490541F98A3240047FFF4 /* ZFFirstSinView.m in Sources */,
 				18FD0B2E1F7AADBA00D9E65B /* ZFNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

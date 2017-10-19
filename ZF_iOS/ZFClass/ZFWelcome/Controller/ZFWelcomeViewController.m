@@ -22,14 +22,8 @@
 #pragma mark - 初始化
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setting];
     [self initUI];
 
-}
-
-#pragma mark - 设置
-- (void)setting {
-    
 }
 
 #pragma mark - 初始化自定义视图
@@ -47,7 +41,10 @@
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     ZFTabBarController *tabBarController = [[ZFTabBarController alloc] init];
     appDelegate.window.rootViewController = tabBarController;
-    [self presentViewController:tabBarController animated:NO completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+       [self presentViewController:tabBarController animated:NO completion:nil];
+    }];
+    
 }
 
 #pragma mark - 加载图片

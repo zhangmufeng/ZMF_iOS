@@ -21,7 +21,7 @@
     
     [Bugly startWithAppId:@"9ce7664623"]; // Bugly
     
-    [[UIApplication sharedApplication] setStatusBarStyle:(UIStatusBarStyleLightContent)];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
     self.window.rootViewController = [[NSClassFromString(@"ZFTabBarController") alloc] init];

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ZFWelcomeViewController : UIViewController
+#import "ZFBaseViewController.h"
+@interface ZFWelcomeViewController : ZFBaseViewController
 
 @end

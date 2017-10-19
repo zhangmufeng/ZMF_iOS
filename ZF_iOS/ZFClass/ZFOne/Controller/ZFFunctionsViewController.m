@@ -17,24 +17,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+     self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    
     [self.view setBackgroundColor:[UIColor blackColor]];
     
+    self.navigationController.navigationBar.translucent = NO;
 
     [self initUI];
 }
+
 #pragma mark - 初始化
 - (void)initUI {
     
 //    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
 //    self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.bounds), 2 * CGRectGetHeight(self.view.bounds));
     //    [self.view addSubview:self.scrollView];
+    [self.navigationController.navigationBar setTitleTextAttributes: @{ NSFontAttributeName:[UIFont systemFontOfSize:17], NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.layer.cornerRadius = 40;
     imageView.clipsToBounds = YES;
     imageView.layer.borderWidth = 10;
-    imageView.layer.borderColor = [UIColor colorWithHexString:@"#FDF237"].CGColor;
+    imageView.layer.borderColor = [UIColor cyanColor].CGColor;
     [self.view addSubview:imageView];
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
