@@ -19,10 +19,10 @@
     
     self.tabBar.barTintColor = [UIColor colorWithHexString:@"#EAEAEA"];
     self.tabBar.barTintColor = [UIColor blackColor];
-    UIViewController *one   = [self loadChildViewControllerWithClassNameString:@"ZFFunctionsViewController"   andTitle:@"Function"  andImageName:@"one"];
-    UIViewController *two   = [self loadChildViewControllerWithClassNameString:@"ZFTwoViewController"   andTitle:@"Swift"      andImageName:@"one"];
-    UIViewController *Three = [self loadChildViewControllerWithClassNameString:@"ZFThreeViewController" andTitle:@"Animation"  andImageName:@"one"];
-    UIViewController *Four  = [self loadChildViewControllerWithClassNameString:@"ZFFourViewController"  andTitle:@"Frameworks" andImageName:@"one"];
+    UIViewController *one   = [self loadChildViewControllerWithClassNameString:@"ZFFunctionsViewController"   andTitle:@"Function"  andImageName:@"tabbar_function"];
+    UIViewController *two   = [self loadChildViewControllerWithClassNameString:@"ZFSwiftViewController"       andTitle:@"Swift"      andImageName:@"tabbar_swift"];
+    UIViewController *Three = [self loadChildViewControllerWithClassNameString:@"ZFThreeViewController" andTitle:@"Animation"  andImageName:@"tabbar_anmiation"];
+    UIViewController *Four  = [self loadChildViewControllerWithClassNameString:@"ZFFourViewController"  andTitle:@"Frameworks" andImageName:@"tabbar_framework"];
     self.viewControllers = @[one, two, Three, Four];
 }
 

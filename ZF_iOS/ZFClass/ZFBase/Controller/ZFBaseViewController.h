@@ -10,4 +10,7 @@
 
 @interface ZFBaseViewController : UIViewController
 
+@property (strong, nonatomic) UIButton *backButton;
+@property (strong, nonatomic) UIButton *closeButton;
+
 @end
