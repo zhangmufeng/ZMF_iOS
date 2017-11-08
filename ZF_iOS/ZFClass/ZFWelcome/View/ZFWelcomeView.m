@@ -25,7 +25,7 @@
 }
 
 - (void)initUI {
-    
+
     self.welcomeScrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
     self.welcomeScrollView.backgroundColor = [UIColor blackColor];
     self.welcomeScrollView.showsVerticalScrollIndicator = NO;

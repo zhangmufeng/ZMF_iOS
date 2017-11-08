@@ -11,6 +11,7 @@
 #import "ZFFuncDetailTableViewCell.h"
 #import "ZFFunctionModel.h"
 #import "ZFSliderViewController.h"
+#import "ZFAddressBookOptionsTableView.h"
 
 #define kZFFuncDetailTableViewCell  @"ZFFuncDetailTableViewCellID"
 
@@ -27,7 +28,7 @@
     [backButton setImage:[UIImage imageNamed:@"返回"] forState:(UIControlStateNormal)];
     [backButton addTarget:self action:@selector(back) forControlEvents:(UIControlEventTouchUpInside)];
     backButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
-    backButton.frame = CGRectMake(0, 0, 40, 40);
+    backButton.frame = CGRectMake(0, 0, 25, 25);
     UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     UIButton *closeButton = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [closeButton setImage:[UIImage imageNamed:@"关闭"] forState:(UIControlStateNormal)];
@@ -51,7 +52,8 @@
 }
 - (void)loadData {
     self.dataArr = [NSArray array];
-    NSArray *arr = @[@{@"titleStr" : @"轮播图"}
+    NSArray *arr = @[@{@"titleStr" : @"轮播图"},
+                     @{@"titleStr" : @"通讯录"},
                     ];
     self.dataArr = [NSArray yy_modelArrayWithClass:[ZFFunctionModel class] json:arr];
  
@@ -92,6 +94,20 @@
         case ZFTableViewRowSerialNumberZero: {
             ZFSliderViewController *sliderViewController = [ZFSliderViewController new];
             [self.navigationController pushViewController:sliderViewController animated:YES];
+        } break;
+        
+        case ZFTableViewRowSerialNumberOne: {
+
+            ZFAddressBookOptionsTableView *addressBookOptionsTableView = [ZFAddressBookOptionsTableView new];
+            addressBookOptionsTableView.backgroundColor = [UIColor darkGrayColor];
+            [self.view.window addSubview:addressBookOptionsTableView];
+            [addressBookOptionsTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.center.equalTo(self.view);
+                make.left.equalTo(self.view).offset(20);
+                make.right.equalTo(self.view).offset(-20);
+                make.height.mas_equalTo(200);
+            }];
+            
         } break;
             
         default:

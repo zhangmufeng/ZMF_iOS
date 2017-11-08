@@ -21,6 +21,8 @@
 		181BEB3B1F7E1F1D00E1C054 /* ZFBuglyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB3A1F7E1F1D00E1C054 /* ZFBuglyViewController.m */; };
 		181BEB471F7E2CC400E1C054 /* ZFPerformanceOptimizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BEB451F7E2CA500E1C054 /* ZFPerformanceOptimizationViewController.m */; };
 		18379C251F7B4ADD00D6DC5A /* ZFBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18379C241F7B4ADD00D6DC5A /* ZFBaseTableViewCell.m */; };
+		189E472A1FB156B100CA0FC3 /* ZFAddressBookOptionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E47291FB156B100CA0FC3 /* ZFAddressBookOptionsTableView.m */; };
+		189E47711FB1B0BC00CA0FC3 /* ZFAppPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E47701FB1B0BC00CA0FC3 /* ZFAppPopView.m */; };
 		18A2155C1F974660008AA880 /* ZFWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A2155B1F974660008AA880 /* ZFWelcomeView.m */; };
 		18A2155D1F9752A7008AA880 /* ZFWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A215581F974646008AA880 /* ZFWelcomeViewController.m */; };
 		18A6AA981F96E886003631C1 /* UIView+RollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6AA961F96E885003631C1 /* UIView+RollView.m */; };
@@ -103,6 +105,10 @@
 		18379C231F7B4ADD00D6DC5A /* ZFBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFBaseTableViewCell.h; sourceTree = "<group>"; };
 		18379C241F7B4ADD00D6DC5A /* ZFBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFBaseTableViewCell.m; sourceTree = "<group>"; };
 		1899731C1F7B6E930037230C /* ZFEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFEnum.h; sourceTree = "<group>"; };
+		189E47281FB156B100CA0FC3 /* ZFAddressBookOptionsTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFAddressBookOptionsTableView.h; sourceTree = "<group>"; };
+		189E47291FB156B100CA0FC3 /* ZFAddressBookOptionsTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFAddressBookOptionsTableView.m; sourceTree = "<group>"; };
+		189E476F1FB1B0BC00CA0FC3 /* ZFAppPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFAppPopView.h; sourceTree = "<group>"; };
+		189E47701FB1B0BC00CA0FC3 /* ZFAppPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFAppPopView.m; sourceTree = "<group>"; };
 		18A215581F974646008AA880 /* ZFWelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFWelcomeViewController.m; sourceTree = "<group>"; };
 		18A215591F974646008AA880 /* ZFWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFWelcomeViewController.h; sourceTree = "<group>"; };
 		18A2155A1F974660008AA880 /* ZFWelcomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFWelcomeView.h; sourceTree = "<group>"; };
@@ -300,9 +306,43 @@
 		18379C291F7B5BC100D6DC5A /* Subpage */ = {
 			isa = PBXGroup;
 			children = (
-				18C778D01F99E2F10021B303 /* 01-Slider */,
+				18C778D01F99E2F10021B303 /* 01-轮播 */,
+				189E47241FB155D900CA0FC3 /* 02-通讯录 */,
 			);
 			path = Subpage;
+			sourceTree = "<group>";
+		};
+		189E47241FB155D900CA0FC3 /* 02-通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				189E47251FB155D900CA0FC3 /* Controller */,
+				189E47261FB155D900CA0FC3 /* Model */,
+				189E47271FB155D900CA0FC3 /* View */,
+			);
+			path = "02-通讯录";
+			sourceTree = "<group>";
+		};
+		189E47251FB155D900CA0FC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		189E47261FB155D900CA0FC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		189E47271FB155D900CA0FC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				189E47281FB156B100CA0FC3 /* ZFAddressBookOptionsTableView.h */,
+				189E47291FB156B100CA0FC3 /* ZFAddressBookOptionsTableView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		18A2153C1F97201D008AA880 /* ZFResource */ = {
@@ -339,14 +379,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		18C778D01F99E2F10021B303 /* 01-Slider */ = {
+		18C778D01F99E2F10021B303 /* 01-轮播 */ = {
 			isa = PBXGroup;
 			children = (
 				18C778D11F99E2F10021B303 /* Controller */,
 				18C778D21F99E2F10021B303 /* Model */,
 				18C778D31F99E2F10021B303 /* View */,
 			);
-			path = "01-Slider";
+			path = "01-轮播";
 			sourceTree = "<group>";
 		};
 		18C778D11F99E2F10021B303 /* Controller */ = {
@@ -646,6 +686,8 @@
 				18FD0B651F7AB07100D9E65B /* ZFMacros.h */,
 				18FD0B661F7AB08300D9E65B /* ZFURL.h */,
 				1899731C1F7B6E930037230C /* ZFEnum.h */,
+				189E476F1FB1B0BC00CA0FC3 /* ZFAppPopView.h */,
+				189E47701FB1B0BC00CA0FC3 /* ZFAppPopView.m */,
 			);
 			path = ZFApp;
 			sourceTree = "<group>";
@@ -938,8 +980,10 @@
 				18C778D61F99E78E0021B303 /* ZFSliderViewController.m in Sources */,
 				18FD0B1F1F7AAC6400D9E65B /* ZFBaseTableViewController.m in Sources */,
 				181490541F98A3240047FFF4 /* ZFFirstSinView.m in Sources */,
+				189E47711FB1B0BC00CA0FC3 /* ZFAppPopView.m in Sources */,
 				18C778C31F998F590021B303 /* ZFSwiftViewController.m in Sources */,
 				18FD0B2E1F7AADBA00D9E65B /* ZFNavigationController.m in Sources */,
+				189E472A1FB156B100CA0FC3 /* ZFAddressBookOptionsTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

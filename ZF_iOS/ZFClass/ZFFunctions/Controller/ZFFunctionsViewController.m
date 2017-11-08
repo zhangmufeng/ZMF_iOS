@@ -8,26 +8,18 @@
 
 #import "ZFFunctionsViewController.h"
 #import "ZFFuncDetailViewController.h"
+#import "ZFFunctionsView.h"
 
 @interface ZFFunctionsViewController ()
 
 @end
 
 @implementation ZFFunctionsViewController
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
-}
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"#ebebeb"];
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.view setBackgroundColor:[UIColor blackColor]];
-    
-    self.navigationController.navigationBar.translucent = NO;
+
 
     [self initUI];
 }
@@ -35,21 +27,7 @@
 #pragma mark - 初始化
 - (void)initUI {
     
-//    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-//    self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.bounds), 2 * CGRectGetHeight(self.view.bounds));
-    //    [self.view addSubview:self.scrollView];
-    [self.navigationController.navigationBar setTitleTextAttributes: @{ NSFontAttributeName:[UIFont systemFontOfSize:17], NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    
-    UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.layer.cornerRadius = 40;
-    imageView.clipsToBounds = YES;
-    imageView.layer.borderWidth = 10;
-    imageView.layer.borderColor = [UIColor cyanColor].CGColor;
-    [self.view addSubview:imageView];
-    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.width.height.mas_equalTo(120);
-    }];
+    [self.navigationController.navigationBar setTitleTextAttributes: @{ NSFontAttributeName:[UIFont systemFontOfSize:17], NSForegroundColorAttributeName:[UIColor blackColor]}];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goToNext)];
     [self.view addGestureRecognizer:tap];
